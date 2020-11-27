@@ -1,5 +1,6 @@
 import 'package:movies/app/shared/custom_dio.dart';
 import 'package:movies/app/shared/custom_interceptor.dart';
+import 'modules/movie/movie_module.dart';
 import 'modules/movies/movies_module.dart';
 import 'app_bloc.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -16,7 +17,8 @@ class AppModule extends MainModule {
 
   @override
   List<ModularRouter> get routers => [
-        ModularRouter(Modular.initialRoute, module: MoviesModule()),
+        ModularRouter('/', module: MoviesModule()),
+        ModularRouter('/movie', module: MovieModule())
       ];
 
   @override

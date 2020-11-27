@@ -47,20 +47,29 @@ class _MoviesPageState extends State<MoviesPage> {
 
   _buildListOfMovies(MoviesModel data) {
     return Container(
-      child: Center(child: Text("${data.totalPages}")),
+      child: ListView.builder(
+          itemCount: data.results.length,
+          itemBuilder: (_, index) {
+            var movie = data.results[index];
+            return ListTile(
+              title: Text(movie.title),
+              onTap: () {
+                Modular.to.pushNamed('/movie', arguments: movie);
+              },
+            );
+          }),
     );
   }
 
   _buildLoadingWidget() {
     return Container(
-      child: Center(child: Text("Loading")),
+      child: Center(child: CircularProgressIndicator()),
     );
   }
 
   _buildErrorWidget(String error) {
-    print(error);
     return Container(
-      child: Center(child: Text(error)),
+      child: Center(child: Text(error, style: TextStyle(color: Colors.red))),
     );
   }
 }
