@@ -1,4 +1,5 @@
-import 'package:movies/app/modules/movies/models/movies_model.dart';
+
+import 'package:movies/app/shared/models/movies_model.dart';
 
 abstract class IMoviesRepository {
 

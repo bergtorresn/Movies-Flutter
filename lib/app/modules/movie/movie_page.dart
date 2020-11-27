@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies/app/modules/movies/models/movie_model.dart';
+import 'package:movies/app/shared/models/movie_model.dart';
 
 class MoviePage extends StatefulWidget {
   final MovieModel movie;

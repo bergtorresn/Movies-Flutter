@@ -1,8 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:movies/app/modules/movies/models/movies_model.dart';
 import 'package:movies/app/modules/movies/repository/movies_repository_interface.dart';
 import 'package:movies/app/shared/constants.dart';
+import 'package:movies/app/shared/models/movies_model.dart';
 
 class MoviesRepository implements IMoviesRepository {
   final Dio dio;

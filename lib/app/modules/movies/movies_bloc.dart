@@ -1,6 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:movies/app/modules/movies/models/movies_model.dart';
 import 'package:movies/app/modules/movies/repository/movies_repository.dart';
+import 'package:movies/app/shared/models/movies_model.dart';
 import 'package:rxdart/rxdart.dart';
 
 class MoviesBloc extends Disposable {
