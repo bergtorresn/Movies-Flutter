@@ -1,4 +1,5 @@
-import 'package:movies/app/modules/login/repository/localstorage/local_storage_interface.dart';
+
+import 'local_storage_interface.dart';
 
 class LocalStorageMock implements ILocalStorage {
   String key = "keyToTest";

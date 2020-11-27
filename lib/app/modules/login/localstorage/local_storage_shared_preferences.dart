@@ -1,7 +1,8 @@
 import 'dart:async';
 
-import 'package:movies/app/modules/login/repository/localstorage/local_storage_interface.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import 'local_storage_interface.dart';
 
 class LocalStorageSharedPreferences implements ILocalStorage {
   Completer<SharedPreferences> _instance = Completer<SharedPreferences>();

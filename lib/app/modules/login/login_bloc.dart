@@ -1,5 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:movies/app/modules/login/repository/localstorage/local_storage_interface.dart';
+
+import 'localstorage/local_storage_interface.dart';
 
 class LoginBloc extends Disposable {
 
